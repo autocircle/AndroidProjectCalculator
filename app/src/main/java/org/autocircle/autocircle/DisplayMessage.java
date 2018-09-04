@@ -1,5 +1,6 @@
 package org.autocircle.autocircle;
 
+import android.support.constraint.solver.ArrayLinkedVariables;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ public class DisplayMessage extends AppCompatActivity implements View.OnClickLis
     TextView result;
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnMul, btnDiv, btnSub, btnAdd,
     btnDot, btnResult;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,6 +95,21 @@ public class DisplayMessage extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.bDot:
                 userInput.append(btnDot.getText().toString());
+                break;
+            case R.id.bMultiply:
+
+                break;
+            case R.id.bDivision:
+
+                break;
+            case R.id.bSubstruction:
+
+                break;
+            case R.id.bAddition:
+
+                break;
+            case R.id.bResult:
+
                 break;
 
         }
