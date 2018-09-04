@@ -10,11 +10,8 @@ import org.autocircle.autocircle.databinding.ActivityDisplayMessageBinding;
 import java.text.DecimalFormat;
 
 public class DisplayMessage extends AppCompatActivity implements View.OnClickListener{
-//    EditText userInput;
-//    TextView result;
-//    Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnMul, btnDiv, btnSub, btnAdd,
-//    btnDot, btnResult;
-ActivityDisplayMessageBinding binding;
+
+    ActivityDisplayMessageBinding binding;
     private static final char ADDITION = '+';
     private static final char SUBTRACTION = '-';
     private static final char MULTIPLICATION = '*';
@@ -29,7 +26,6 @@ ActivityDisplayMessageBinding binding;
         decimalFormat = new DecimalFormat("#.##########");
         binding = DataBindingUtil.setContentView(this, R.layout.activity_display_message);
 
-//        initVars();
         binding.bZero.setOnClickListener(this);
         binding.bOne.setOnClickListener(this);
         binding.bTwo.setOnClickListener(this);
@@ -38,7 +34,6 @@ ActivityDisplayMessageBinding binding;
         binding.bFive.setOnClickListener(this);
         binding.bSix.setOnClickListener(this);
         binding.bSeven.setOnClickListener(this);
-
         binding.bEight.setOnClickListener(this);
         binding.bNine.setOnClickListener(this);
         binding.bDot.setOnClickListener(this);
@@ -50,6 +45,7 @@ ActivityDisplayMessageBinding binding;
 
 
     }
+
     private void computeCalculation() {
         if(!Double.isNaN(valueOne)) {
             valueTwo = Double.parseDouble(binding.etUserInput.getText().toString());
